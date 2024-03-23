@@ -1,6 +1,6 @@
-# **README** file for the **_Frontend Bootcamp solutions💻_**
+# **README** file for the **_Frontend Bootcamp solutions 💻_**
 
-In this course we will learn the following <mark>languages</mark>:
+In this course we will learn the following <mark>languages💻</mark>:
 
 - HTML
 - CSS
