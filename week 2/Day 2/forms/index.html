@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms & Inputs Exe</title>
+  </head>
+  <body>
+    <h1>Create an Account</h1>
+    <form action="process.php">
+      <div>
+        <label for="Email">Email:</label><br />
+        <input type="email" name="email" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password:</label><br />
+        <input type="password" name="password" />
+      </div>
+      <br />
+      <div>
+        <label for="age">Age:</label><br />
+        <select type="Age" name="Age">
+          <option value="placeholder" selected>Select Age</option>
+          <option value="option">18</option>
+          <option value="option">19</option>
+          <option value="option">20</option>
+          <option value="option">21</option>
+          <option value="option">22</option>
+          <option value="option">23</option>
+          <option value="option">24</option>
+          <option value="option">25</option>
+          <option value="option">25</option>
+          <option value="option">27</option>
+          <option value="option">28</option>
+          <option value="option">29</option>
+          <option value="option">30</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="message">Tell us a little about yourself:</label><br />
+        <textarea name="message" cols="70" rows="5"></textarea>
+      </div>
+      <div>
+        <label for="agreement"></label><br />
+        <input type="checkbox" name="agreement" />I agree to the
+        <a href="https://termly.io/products/terms-and-conditions-generator/"
+          >term of service</a
+        >
+      </div>
+      <br />
+      <div><input type="submit" value="Submit" /></div>
+
+      <!--or button tag
+    <button type="submit">Submit</button>-->
+    </form>
+  </body>
+</html>
