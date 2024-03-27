@@ -1,0 +1,92 @@
+HTML Google and Stack Overrflow Exercises:
+
+Exercise 1: 
+https://www.scaler.com/topics/structure-of-html-document/
+
+<!DOCTYPE html>: 
+An instruction to the browser regarding the version of HTML the page is written in.
+a decleration thet HTML 5 is used.
+
+<html>:
+Used to specify the roots of HTML page. 
+The <html> tag informs the browser that this is an HTML document. It is the second outer container for everything in an HTML document, and requires a beginning and ending tag.
+
+<head>:
+The <head> tag in HTML is used to contain metadata (data about data). It is used between the<html> and <body> tags.
+The content of the head is not displayed in the browser when the page loads. It only contains HTML document metadata, which specifies information about the HTML document, requires a beginning and ending tag.
+
+<body>
+Specifies the main content of an HTML document that appears on the browser. It can contain headings, text, paragraphs, photos, tables, links, videos, etc.
+The <body> tag must come after the <head> tag. This tag is essential for all HTML documents and should only be used once throughout the document, requires a beginning and ending tag.
+
+
+https://stackoverflow.com/questions/29868581/how-to-resolve-the-following-html-error
+
+
+Exercise 2: 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element.
+
+<link>
+Specifies relationships between the current document and an external resource. This element is most commonly used to link to CSS
+
+<p>
+Represents a paragraph, it can be any structural grouping of related content, such as images or form fields.
+
+<img>
+Embeds an image into the document.
+ 
+https://stackoverflow.com/questions/38715285/best-practices-on-usage-of-section-article-semantic-elements-in-html5
+
+Exercise 3: 
+https://www.freecodecamp.org/news/how-to-use-html-forms/
+
+The <input> element is the most commonly used form element. The type of information an <input> element can hold depends on the <type> attribute.
+The <input>  element can only accept a particular type of data assigned to it using the <type>  attribute.
+
+https://stackoverflow.com/questions/39830377/html-form-validation-not-working
+
+Exercise 4: 
+https://blog.hubspot.com/website/html-accessibility
+
+Three semantic elements that contribute to a more accessible website are: 
+<header>, <footer>, <nav>
+
+https://stackoverflow.com/questions/32812349/html-accessibility-are-empty-elements-allowed
+
+Exercise 5: 
+
+https://www.geeksforgeeks.org/html-tables/
+
+Simple table
+<!-- index.html -->
+<!DOCTYPE html> 
+<html> 
+
+<body> 
+	<table> 
+		<tr> 
+			<th>Book Name</th> 
+			<th>Author Name</th> 
+			<th>Genre</th> 
+		</tr> 
+		<tr> 
+			<td>The Book Thief</td> 
+			<td>Markus Zusak</td> 
+			<td>Historical Fiction</td> 
+		</tr> 
+		<tr> 
+			<td>The Cruel Prince</td> 
+			<td>Holly Black</td> 
+			<td>Fantasy</td> 
+		</tr> 
+		<tr> 
+			<td>The Silent Patient</td> 
+			<td> Alex Michaelides</td> 
+			<td>Psychological Fiction</td> 
+		</tr> 
+	</table> 
+</body> 
+
+</html> 
+
+https://stackoverflow.com/questions/83073/why-not-use-tables-for-layout-in-html

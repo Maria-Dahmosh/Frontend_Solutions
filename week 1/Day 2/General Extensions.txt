@@ -1,0 +1,31 @@
+General
+
+- Live Server: Ritwick Dey
+
+- Prettier - Code formatter: Prettier
+
+- Settings Sync: Shan Khan
+
+- Auto Close Tag: Jun Han
+
+- Auto Rename Tag: Jun Han
+
+- Code Runner: Jun Han
+
+- Code Spell Checker: Street Side Software
+
+- Color Highlight: Sergii N
+
+- CSS Formatter: Martin Aeschlimann
+
+- GitLens — Git supercharged: GitKraken
+
+- Image preview: Kiss Tamás
+
+- Markdown Preview Enhanced: Yiyi Wang
+
+- Path Intellisense: Christian Kohler
+
+- stylelint-plus: Hex
+
+- ESDoc MDN: Samundra Khatri

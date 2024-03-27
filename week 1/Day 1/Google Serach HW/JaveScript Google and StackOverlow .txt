@@ -1,0 +1,63 @@
+JaveScript Google and StackOverlow Exercise:
+
+Exercise 1: 
+https://dev.to/cliff123tech/javascript-from-beginner-to-master-tutorial-series-37fe
+
+Strings: Sequences of characters	
+Numbers: Integers and floating-point numbers	
+Booleans: Values that can be either true or false
+
+https://stackoverflow.com/questions/72912065/data-types-values-and-objects
+
+Exercise 2: 
+https://medium.com/@rianna.cleary/control-flow-in-javascript-9c63d0c98bb9
+
+The if statement is used when we want a block of code to be run as long as the condition it true. Like so:
+
+if (4 * 4 = 16) {
+ console.log('This will run!')
+}
+// 
+This code will always print 'This will run!' because 4 * 4 is always going equal 16. 
+
+
+function printGenres(x) {
+ {
+  console.log("you entered the followingnumber to the function" +x)
+ }
+
+https://stackoverflow.com/questions/33085551/what-is-the-best-way-to-organize-the-functions-in-different-js-files
+
+
+Exercise 3: 
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
+
+https://stackoverflow.com/questions/66648964/struggling-with-asynchronous-javascript-code
+
+Exercise 4: 
+https://www.squash.io/common-javascript-errors-and-how-to-fix-them/
+
+3 strategies:
+1. Use try-catch blocks
+One of the fundamental ways to handle errors in JavaScript is by using try-catch blocks. This allows you to catch and handle exceptions that may occur during the execution of a specific code block. By wrapping potentially error-prone code within a try block, you can gracefully handle any errors that may arise.
+
+2.Implement error logging
+Error logging is a crucial practice for identifying and diagnosing issues in your JavaScript code. By logging errors, you can gather valuable information about the errors that occur in your application, such as the stack trace, error message, and context in which the error occurred.
+
+3. Avoid silent failures
+Silent failures occur when errors are not properly handled or logged, making it difficult to identify and resolve issues. It is important to avoid silent failures as they can lead to unexpected behavior and make debugging a nightmare.
+
+https://stackoverflow.com/questions/988363/how-can-i-debug-my-javascript-code
+
+
+Exercise 5: 
+https://www.freecodecamp.org/news/javascript-document-object-model-explained/#change-the-content-of-an-element
+
+changing the content of an element is done by setting the innerText property of that element.
+select the element and change its innerText value like this:
+<p class="myParagraph">This is a paragraph</p>
+
+const p = document.querySelector('.myParagraph');
+p.innerText = 'A new day is dawning';
+
+https://stackoverflow.com/questions/53348092/manipulating-dom-with-javascript

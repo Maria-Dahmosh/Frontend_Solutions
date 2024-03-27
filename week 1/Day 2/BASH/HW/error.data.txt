@@ -1,0 +1,31 @@
+[2023-08-20 12:05:23] ERROR: Unable to connect to database server
+[2023-08-20 12:07:42] ERROR: File not found: /var/www/html/page-not-found.html
+[2023-08-20 12:10:11] ERROR: Internal server error in processing request
+[2023-08-20 12:12:37] ERROR: Invalid input data received from client
+[2023-08-20 12:15:18] ERROR: Authentication failed for user 'admin'
+[2023-08-20 12:17:59] ERROR: Database query failed: Table 'users' not found
+[2023-08-20 12:20:27] ERROR: Out of memory error while processing request
+[2023-08-20 12:23:05] ERROR: Access denied for IP address: 192.168.1.100
+[2023-08-20 12:25:42] ERROR: Configuration file is missing or corrupted
+[2023-08-20 12:28:19] ERROR: HTTP request exceeded maximum allowed size
+[2023-08-20 12:30:51] ERROR: Unable to write to log file: /var/log/error.log
+[2023-08-20 12:33:29] ERROR: Invalid API key provided by client
+[2023-08-20 12:36:07] ERROR: Disk space is critically low on server
+[2023-08-20 12:38:44] ERROR: Missing required parameter in request
+[2023-08-20 12:41:22] ERROR: Server timed out while processing request
+[2023-08-20 12:43:59] ERROR: Database connection pool exhausted
+[2023-08-20 12:46:37] ERROR: SSL certificate expired
+[2023-08-20 12:49:15] ERROR: Invalid token received from client
+[2023-08-20 12:51:42] ERROR: Server configuration is not valid
+[2023-08-20 12:54:21] ERROR: Failed to load required library: libcrypto.so.1.1
+[2023-08-20 12:57:00] ERROR: Permission denied for file: /etc/config.conf
+[2023-08-20 12:59:38] ERROR: Service unavailable due to high traffic
+[2023-08-20 13:02:16] ERROR: Unexpected response format from API
+[2023-08-20 13:04:54] ERROR: Requested resource is temporarily unavailable
+[2023-08-20 13:07:31] ERROR: DNS resolution failed for hostname: example.com
+[2023-08-20 13:10:08] ERROR: Unable to create temporary file for processing
+[2023-08-20 13:12:45] ERROR: Configuration value exceeds allowed limit
+[2023-08-20 13:15:23] ERROR: Invalid character in request URL
+[2023-08-20 13:18:01] ERROR: Service crashed unexpectedly
+[2023-08-20 13:20:38] ERROR: Server overloaded, unable to handle new connections
+
