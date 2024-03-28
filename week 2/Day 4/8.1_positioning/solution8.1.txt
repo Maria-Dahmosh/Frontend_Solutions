@@ -1,0 +1,5 @@
+1. The problem is that the inner box is not positioned relative to any parent the body element, therefore it will be positioned relative to the document body and that's what caused the problem.
+To fix the problem and set the inner div with position absolute and gave it a
+top of 10px relative to the outer div, we need to add position relative to the outer div.
+
+

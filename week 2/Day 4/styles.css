@@ -1,0 +1,45 @@
+.parent {
+  font-size: 10px;
+}
+
+.child1 {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  position: absolute;
+  background-color: white;
+  left: 10px;
+  top: 30px;
+}
+.child2 {
+  width: 100px;
+  height: 150px;
+  border: 2px solid black;
+  background-color: white;
+  position: absolute;
+  left: 80px;
+  top: 100px;
+  z-index: 1;
+}
+.child3 {
+  width: 300px;
+  height: 100px;
+  border: 2px solid black;
+  background-color: white;
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  z-index: 2;
+}
+
+.child4 {
+  width: 70px;
+  height: 300px;
+  border: 2px solid black;
+  background-color: white;
+  position: absolute;
+  left: 190px;
+  top: 30px;
+
+  z-index: 3;
+}

@@ -1,0 +1,93 @@
+body {
+  background-color: rgb(95, 207, 232);
+  text-align: center;
+}
+body h3 {
+  color: white;
+  size: 20px;
+}
+.btns {
+  color: white;
+  font-size: 10px;
+  margin: 10px 30px;
+  padding: 5px;
+}
+.btn {
+  color: white;
+  padding: 10px;
+  margin: 10px 30px;
+}
+#btn1 {
+  background-color: rgb(68, 68, 231);
+  border: none;
+}
+#btn1:hover {
+  background-color: rgb(84, 84, 210);
+}
+
+#btn2 {
+  background-color: rgb(69, 184, 69);
+  border-radius: 20px;
+  border: none;
+}
+#btn2:hover {
+  background-color: rgb(112, 229, 112);
+}
+
+#btn3 {
+  border: 2px solid red;
+  background-color: transparent;
+}
+#btn3:hover {
+  border: 2px solid red;
+  background-color: red;
+}
+
+#btn4 {
+  border-radius: 20px;
+  border: 2px solid rgb(178, 168, 54);
+  background-color: transparent;
+}
+#btn4:hover {
+  background-color: rgb(178, 168, 54);
+  border: 2px solid rgb(178, 168, 54);
+}
+/*left side buttons*/
+
+#btns1 {
+  background-color: rgb(178, 168, 54);
+  border: 2px solid rgb(178, 168, 54);
+}
+#btns1:hover {
+  border: 2px solid rgb(178, 171, 95);
+  background-color: rgb(178, 171, 95);
+}
+
+#btns2 {
+  border-radius: 20px;
+  border: 2px solid rgb(137, 36, 60);
+  background-color: rgb(137, 36, 60);
+}
+#btns2:hover {
+  background-color: rgb(137, 61, 79);
+  border: 2px solid rgb(137, 61, 79);
+}
+
+#btns3 {
+  border: 2px solid rgb(145, 42, 102);
+  background-color: transparent;
+}
+#btns3:hover {
+  background-color: rgb(122, 71, 101);
+  border: 2px solid rgb(122, 71, 101);
+}
+/* 4th button*/
+#btns4 {
+  border-radius: 20px;
+  border: 2px solid rgb(17, 107, 91);
+  background-color: transparent;
+}
+#btns4:hover {
+  background-color: rgb(65, 111, 102);
+  border: 2px solid rgb(65, 111, 102);
+}
