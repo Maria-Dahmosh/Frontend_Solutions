@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12.2-pseudo_box_color</title>
+    <style>
+      .outer {
+        background-color: red;
+        position: relative;
+        height: 500px;
+        width: 500px;
+        margin: 30px;
+      }
+      .outer:after {
+        content: "";
+        background-color: blueviolet;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        /*-- top: 0;
+        right: 0;
+        bottom: 0*  why we need to add this or height 100% to see the other box*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer"></div>
+  </body>
+</html>
