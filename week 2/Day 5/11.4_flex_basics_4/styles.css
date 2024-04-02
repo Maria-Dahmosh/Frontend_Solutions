@@ -1,0 +1,24 @@
+.parent {
+  display: flex;
+  background-color: antiquewhite;
+  height: 400px;
+  /*  flext direction: row;
+  align-items: flex-start;
+    justify-content: flex-start; the default value.*/
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.item {
+  width: 100px;
+  height: 100px;
+}
+.item-1 {
+  background-color: green;
+}
+.item-2 {
+  background-color: red;
+}
+.item-3 {
+  background-color: blue;
+}
