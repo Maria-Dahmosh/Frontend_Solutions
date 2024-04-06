@@ -1,0 +1,41 @@
+/*define variables*/
+:root {
+  --bg: rgba(254, 255, 255, 0.776);
+  --card_bg: rgb(207, 174, 174);
+  --fontcolor: black;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  text-align: center;
+  height: 400px;
+  width: 300px;
+  background-color: var(--card_bg);
+  padding-top: 20px;
+  color: var(--fontcolor);
+  box-shadow: 5px 5px 20px grey;
+}
+.card:hover {
+  box-shadow: 30px 30px 20px grey;
+}
+p {
+  font-weight: bold;
+}
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+}

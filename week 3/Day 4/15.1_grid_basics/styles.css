@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+}
+.container {
+  height: 50%;
+
+  display: grid;
+  grid-template-areas:
+    "box1 box1 box2 box2"
+    "box3 box4 box4 box4"
+    "box5 box5 box5 box5";
+  grid-gap: 1rem;
+  margin: 20px;
+}
+.box-1 {
+  grid-area: box1;
+  background-color: rgb(216, 85, 85);
+  border-radius: 10px;
+}
+
+.box-2 {
+  grid-area: box2;
+  background-color: rgb(43, 43, 173);
+  border-radius: 10px;
+}
+
+.box-3 {
+  grid-area: box3;
+  background-color: rgb(18, 126, 38);
+  border-radius: 10px;
+}
+
+.box-4 {
+  grid-area: box4;
+  background-color: rgb(118, 46, 199);
+  border-radius: 10px;
+}
+.box-5 {
+  grid-area: box5;
+  background-color: rgb(190, 213, 73);
+  border-radius: 10px;
+}

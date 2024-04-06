@@ -1,0 +1,54 @@
+/*define variables*/
+:root {
+  --bg: rgba(254, 255, 255, 0.776);
+  --card_bg: rgb(220, 218, 218);
+  --fontcolor: black;
+
+  /*dark*/
+  .dark-theme {
+    --bg: rgb(38, 37, 37);
+    --card_bg: rgb(65, 61, 61);
+    --fontcolor: white;
+  }
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile {
+  text-align: center;
+  height: 400px;
+  width: 500px;
+  background-color: var(--card_bg);
+  padding-top: 20px;
+  color: var(--fontcolor);
+}
+.card {
+  text-align: center;
+}
+p {
+  font-weight: bold;
+}
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+button {
+  margin-top: 20px;
+  background-color: var(--bg);
+  color: var(--fontcolor);
+  padding: 5px;
+}
+button:hover {
+  cursor: pointer;
+}

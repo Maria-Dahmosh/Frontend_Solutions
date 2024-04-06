@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: rgb(0, 247, 255);
+  position: relative;
+}
+a::after {
+  content: attr(data-tooltip);
+  background-color: rgb(226, 217, 43);
+  position: absolute;
+  color: black;
+  top: calc(100% + 5px); /* Position the tooltip below the a tag */
+  left: 50%; /* Center horizontally */
+  width: max-content;
+  height: 100%;
+  top: 50%;
+  display: none;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  border: 15px;
+  /*-- top: 0;
+    right: 0;
+    bottom: 0*  why we need to add this or height 100% to see the other box*/
+}
+a:hover::after {
+  display: block;
+}

@@ -1,0 +1,73 @@
+body {
+  height: 100vh;
+  font-family: "Times New Roman", Times, serif;
+}
+.container {
+  height: 50%;
+  width: 50%;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "Sidebar content content Sidebar2"
+    "footer footer footer footer";
+  grid-gap: 1rem;
+  margin: 20px;
+}
+.container > div {
+  color: white;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.box-1 {
+  grid-area: header;
+  background-color: rgb(216, 85, 85);
+  border-radius: 10px;
+}
+
+.box-2 {
+  grid-area: Sidebar;
+  background-color: rgb(43, 43, 173);
+  border-radius: 10px;
+}
+
+.box-3 {
+  grid-area: content;
+  background-color: rgb(43, 137, 60);
+  border-radius: 10px;
+}
+
+.box-4 {
+  grid-area: Sidebar2;
+  background-color: rgb(122, 76, 182);
+  border-radius: 10px;
+}
+.box-5 {
+  grid-area: footer;
+  background-color: rgb(156, 158, 52);
+  border-radius: 10px;
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+  /* CSS rules for devices with a width between 601px and 1023px (tablet devices) */
+
+  .container {
+    grid-template-areas:
+      "header header header header"
+      "Sidebar content content content"
+      "Sidebar2 Sidebar2 Sidebar2 Sidebar2"
+      "footer footer footer footer";
+  }
+}
+@media (max-width: 600px) {
+  /* CSS rules for devices with a maximum width of 600px (mobile devices) */
+
+  .container {
+    grid-template-areas:
+      "header"
+      "Sidebar"
+      "content"
+      "Sidebar2"
+      "footer";
+  }
+}

@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+  text-shadow: 2px 2px grey;
+}

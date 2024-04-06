@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*to change the root font size: 16ps is the default*/
+
+html {
+  font-size: 10px;
+} /*this is the default*/
+
+.container1 {
+  font-size: 12px;
+}
+.container1 .p1 {
+  font-size: 2em;
+  padding: 2em;
+}
+
+.container2 .p2 {
+  font-size: 2rem;
+  padding: 2rem;
+}
+.container3 {
+  height: 20vh;
+  background-color: aquamarine;
+  text-align: center;
+  padding-top: 5vh;
+  font-size: 2vh;
+}

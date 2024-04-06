@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+/*first*/
+.spinner1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 0;
+}
+.spinner1 {
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  border-top-color: rgb(168, 119, 13);
+  border-left-color: rgb(177, 131, 15);
+  border-radius: 50%;
+  animation: spin1 1s linear infinite;
+}
+@keyframes spin1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*2*/
+.spinner2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 0;
+}
+.spinner2 {
+  width: 100px;
+  height: 100px;
+  border: 5px solid transparent;
+  border-top-color: rgb(168, 119, 13);
+  border-left-color: rgb(177, 131, 15);
+  border-radius: 50%;
+  animation: spin1 1s linear infinite;
+}
+
+/*3*/
+.spinner3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dot1,
+.dot2,
+.dot3 {
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: rgb(189, 109, 25);
+  animation: spin3 2s linear infinite;
+}
+.dot1 {
+  animation-delay: 0.5s;
+}
+.dot2 {
+  animation-delay: 1s;
+}
+.dot3 {
+  animation-delay: 1.5s;
+}
+@keyframes spin3 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*4*/
+.spinner4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c1,
+.c2,
+.c3 {
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: rgb(191, 103, 8);
+  animation: spin4 2s linear infinite;
+}
+
+.c2 {
+  animation-delay: 0.2s;
+}
+.c3 {
+  animation-delay: 0.3s;
+}
+@keyframes spin4 {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
