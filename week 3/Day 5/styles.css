@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.8;
+}
+footer a,
+header a,
+.hide-btn {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  margin: 30px auto;
+  max-width: 450px;
+  padding: 20px;
+}
+
+.main,
+footer {
+  padding: 15px 25px;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+header p {
+  font-size: 12px;
+}
+
+/*form*/
+.main .form-group label {
+  display: block;
+  font-size: 11px;
+}
+.main .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: rgb(194, 191, 191) 1px solid;
+  border-radius: 5px;
+  font-size: 9px;
+}
+
+.form-group {
+  padding-bottom: 10px;
+}
+.submit-btn {
+  width: 100%;
+  background-color: rgb(194, 191, 191);
+  border-radius: 20px;
+  color: white;
+  border: 0;
+  padding: 10px;
+  font-weight: bold;
+}
+.psw {
+  text-align: start;
+  font-size: 8px;
+}
+.agreement {
+  text-align: start;
+  font-size: 10px;
+  margin-top: 20px;
+}
+.agreement a {
+  color: black;
+}
+
+footer p {
+  text-align: start;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.footer-btn a {
+  border: black 1px solid;
+  width: 30%;
+  border-radius: 20px;
+  padding: 5px 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.footer-btn :hover {
+  background-color: rgb(194, 191, 191);
+}
+.footer-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.pswflx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+}
+.hide-btn {
+  font-size: 8px;
+}
+.submit-btn:hover {
+  color: black;
+  border: black 1px solid;
+}
+.fa-facebook {
+  color: blue;
+}
+.fa-google {
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
