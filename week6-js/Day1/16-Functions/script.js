@@ -217,19 +217,19 @@ console.log(ratingsDifferential(array1, array2));
 // 9. Filter Ratings by Multiple Criteria
 // Example input: ([1, 2, 3, 4, 5], greaterThan=2, lessThan=5)
 function filterRatingByCriteria(array, criteria1, criteria2) {
-  const min = parseInt(criteria1);
-  const max = parseInt(criteria2);
+  const min = parseInt(criteria1.split("=")[1]);
+  const max = parseInt(criteria2.split("=")[1]);
+  // console.log(min, max);
   let newArray = [];
   for (let i = 0, j = 0; i < array.length; i++) {
-    if (array[i] >= min && array[i] <= max) {
+    if (array[i] > min && array[i] < max) {
       newArray[j] = array[i];
       j++;
     }
-    console.log(min, max);
   }
-  return newArray;
+  console.log(newArray);
 }
-filterRatingByCriteria([1, 2, 3, 4, 5], "greater==2", "lessthan=5");
+const exe9 = filterRatingByCriteria([1, 2, 3, 4, 5], "greater=2", "lessthan=5");
 // console.log(
 //   filterRatingByCriteria([1, 2, 3, 4, 5], "greater==2", "lessthan=5")
 // );
@@ -239,12 +239,61 @@ parseInt("lessthan=5");
 
 // 1. Sort Movie Ratings
 // Example input: [5, 3, 4, 2, 1]
-
+function sortArray1(array1) {
+  const sortedArray1 = array1.slice(); //create a copy of an array.
+  for (let i = 0; i < sortedArray1.length - 1; i++) {
+    for (let j = 0; j < sortedArray1.length - 1 - i; j++)
+      if (sortedArray1[j] > sortedArray1[j + 1]) {
+        const temp = sortedArray1[j + 1];
+        sortedArray1[j + 1] = sortedArray1[j];
+        sortedArray1[j] = temp;
+      }
+  }
+  return sortedArray1;
+}
+const array1test = [5, 3, 4, 2, 1];
+console.log(sortArray1(array1test));
 // 2. Average Rating of Top N Movies
 // Example input: ([3, 1, 5, 4, 2], 3)
-
+function topNMovies(array2, NMovies) {
+  return sortArray1(array2).slice(array2.length - NMovies, array2.length);
+}
+const array2test = [3, 1, 5, 4, 2];
+const NMovies2 = 3;
+console.log(topNMovies(array2test, NMovies2));
 // 3. Create Rating Frequency Map
 // Example input: [3, 4, 3, 5, 4, 5, 5]
 
+function ratingFrequencyMap(array3) {
+  const FrequencyMap3 = {};
+  const map3array = [];
+  for (let i = 0; i < array.length; i++) {
+    const rating = array3[i];
+    if (!FrequencyMap3[rating]) {
+      FrequencyMap3[rating] = 1;
+    } else {
+      FrequencyMap3[rating]++;
+    }
+  }
+
+  for (const rating in FrequencyMap3) {
+    map3array.push([parseInt(rating), FrequencyMap3[rating]]);
+  }
+
+  return map3array;
+}
+const array3test = [3, 4, 3, 5, 4, 5, 5];
+console.log(ratingFrequencyMap(array3test));
 // 4. Normalize Ratings
 // Example input: ([1, 2, 3, 4, 5], 0, 10)
+function normalizeRatings(array4, minLimit, maxLimit) {
+  const length4 = array4.length;
+  const normalizedarray = [];
+  const jumps = (maxLimit - minLimit) / (length4 - 1);
+  for (let i = 0; i < length4; i++) {
+    normalizedarray[i] = jumps * i;
+  }
+  return normalizedarray;
+}
+const array4test = [1, 2, 3, 4, 5];
+console.log(normalizeRatings(array4test, 0, 10));
