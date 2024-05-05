@@ -1,0 +1,140 @@
+//1
+const movie = {
+  title: "Inception",
+  year: 2010,
+  rating: 8.8,
+  genre: "Science Fiction",
+};
+const { title, year, rating } = movie;
+//console.log(title, year, rating);
+
+//2
+let topMovies = [
+  "The Shawshank Redemption",
+  "The Godfather",
+  "The Dark Knight",
+  "12 Angry Men",
+];
+const [firstMovie, secondMovie] = topMovies;
+[topMovies[0], topMovies[1]] = [secondMovie, firstMovie];
+//console.log(topMovies);
+
+//3
+const movieRatings = {
+  "The Matrix": 8.7,
+  Inception: 8.8,
+};
+const updates = {
+  Inception: 9.0,
+  "The Matrix": 9.1,
+};
+
+function updateObject(obj, objUpdates) {
+  const updated = { ...obj, ...objUpdates };
+  return updated;
+}
+//console.log(updateObject(movieRatings, updates));
+
+//4
+const list1 = ["The Shawshank Redemption", "The Godfather", "The Dark Knight"];
+const list2 = ["Forrest Gump", "Inception", "The Godfather"];
+function combineLists(arr1, arr2) {
+  const combined = [...arr1, ...arr2];
+  const uniqueCombined = combined.filter(
+    (item, index) => combined.indexOf(item) === index
+  );
+
+  return uniqueCombined;
+}
+//console.log(combineLists(list1, list2));
+
+//5
+const movieDetails = {
+  title: "Inception",
+  cast: {
+    first: "Leonardo DiCaprio",
+    second: "Joseph Gordon-Levitt",
+    third: "Ellen Page",
+  },
+};
+
+const {
+  cast: { first: member1, second: member2 },
+} = movieDetails;
+//console.log(member1, member2);
+
+//6
+const baseInfo = { title: "Inception", director: "Christopher Nolan" };
+const additionalInfo = { year: 2010, rating: 8.8 };
+
+const merged = { ...baseInfo, ...additionalInfo };
+//console.log(merged);
+
+//7
+const movieDetails7 = {
+  title: "Inception",
+  year: 2010,
+  rating: 9.0,
+  genres: ["Action", "Adventure", "Sci-Fi"],
+};
+
+function expandGenres(objList, ...newGenres) {
+  // const mergedLists = [...objList.genres, ...newGenres];
+  // const uniqueGenres = [...new Set(mergedLists)];
+  // const uniqueMergedLists = { ...objList, genres: uniqueGenres };
+  // return uniqueMergedLists;
+  objList.genres = [...objList.genres, ...newGenres];
+  objList.genres = objList.genres.filter((genre, index) => {
+    return objList.genres.indexOf(genre) === index;
+  });
+  //objList.genres = [...new Set(objList.genres)];
+  return objList;
+}
+
+console.log(
+  expandGenres(movieDetails7, "Action", "Romance", "Adventure", "Sci-Fi")
+);
+
+//8
+const watchList = [
+  ["The Matrix", "Inception"],
+  ["Inception", "The Dark Knight"],
+  ["The Dark Knight", "Interstellar"],
+];
+
+function flattenWatchList(arr8) {
+  let mergerd8 = [].concat(...arr8);
+  //const mergedWatchList = [...new Set(mergerd8)];
+  mergerd8 = mergerd8.filter((movie, index) => {
+    return mergerd8.indexOf(movie) === index;
+  });
+  return mergerd8;
+}
+console.log(flattenWatchList(watchList));
+
+//9
+const movies9 = [
+  { title: "The Matrix", rating: 8.7 },
+  { title: "Inception", rating: 8.8 },
+];
+function ratingUpdater(arr9, num9) {
+  return arr9.map(({ title, rating }) => ({ title, rating: rating + num9 }));
+}
+//console.log(ratingUpdater(movies9, 1));
+
+//10
+const movieDetails10 = {
+  title: "The Dark Knight",
+  director: "Christopher Nolan",
+  cast: ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+};
+
+function listOrganizer(obj10) {
+  const { title, cast } = obj10;
+
+  const castFirstNames = cast.map((member) => {
+    return member.split(" ")[0];
+  });
+  return { title, cast: castFirstNames };
+}
+//console.log(listOrganizer(movieDetails10));

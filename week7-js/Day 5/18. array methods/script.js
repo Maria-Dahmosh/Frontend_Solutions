@@ -70,7 +70,7 @@ function combineMovies(moviesArray) {
   );
   return movieTitleRating;
 }
-//console.log(combineMovies(movies));
+// console.log(combineMovies(movies));
 
 //5
 function updateRating(moviesArray, newRating, movieTitle) {
