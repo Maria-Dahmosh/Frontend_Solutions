@@ -1,0 +1,28 @@
+//1
+
+solution:
+undefined
+Cannot access 'b' before initialization
+Cannot access 'c' before initialization
+
+//2
+Function definition hoisting only occurs for function declarations, not function expressions.
+
+solution:
+
+Hello from function declaration!
+myFuncDecl is not defined
+
+//3
+
+global -x is declared in the global scope
+outer -y is declared in the scope of outerFunc
+z is not defined
+
+
+//4
+
+10
+1
+undefined
+Cannot access 'x' before initialization

@@ -2,11 +2,13 @@
 
 function processMovies(movies, callback) {
   if (!Array.isArray(movies)) {
-    console.log("Expected an array of movies");
+    throw new Error("Expected an array of movies");
   } else {
     for (const movie of movies) {
       if (!movie.hasOwnProperty("title") || !movie.hasOwnProperty("rating")) {
-        console.log(`Movie with ID ${movie.id} is not correctly structured`);
+        throw new Error(
+          `Movie with ID ${movie.id} is not correctly structured`
+        );
       }
     }
     const newMovies = JSON.parse(JSON.stringify(movies));
@@ -22,7 +24,7 @@ function processMovies(movies, callback) {
 //2
 function processReviews(reviews, callback) {
   if (!Array.isArray(reviews)) {
-    console.log("Expected an array of reviews");
+    throw new Error("Expected an array of reviews");
   } else {
     for (const review of reviews) {
       if (
@@ -30,7 +32,9 @@ function processReviews(reviews, callback) {
         !review.hasOwnProperty("rating") ||
         !review.hasOwnProperty("comment")
       ) {
-        console.log(`review with ID ${review.id} is not correctly structured`);
+        throw new Error(
+          `review with ID ${review.id} is not correctly structured`
+        );
       }
     }
     const newReviews = JSON.parse(JSON.stringify(reviews));
@@ -47,7 +51,7 @@ function processReviews(reviews, callback) {
 
 function processUsers(users, callback) {
   if (!Array.isArray(users)) {
-    console.log("Expected an array of users");
+    throw new Error("Expected an array of users");
   } else {
     for (const user of users) {
       if (
@@ -56,7 +60,7 @@ function processUsers(users, callback) {
         !user.hasOwnProperty("favoriteMovies") ||
         !user.hasOwnProperty("reviewsPosted")
       ) {
-        console.log(`user with ID ${user.id} is not correctly structured`);
+        throw new Error(`user with ID ${user.id} is not correctly structured`);
       }
     }
     const newUsers = JSON.parse(JSON.stringify(users));
